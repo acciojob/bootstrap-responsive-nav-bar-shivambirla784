@@ -1,16 +1,101 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Navbar</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		
+	</style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
 
+  <nav class="navbar navbar-expand-lg" style="background-color: #e3f3fd;">
+    <a class="navbar-brand" href="#">
+      <img src="https://course.acciojob.com/acciojob_logo.svg" alt="Brand Logo" style="width: 40px;">
+    </a>
+    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <!-- Dropdown for Bootcamps -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="bootcampsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Bootcamps
+          </a>
+          <div class="dropdown-menu" aria-labelledby="bootcampsDropdown">
+            <a class="dropdown-item" href="#">Popular Bootcamps</a>
+            <a class="dropdown-item" href="#">Bootcamp Developers</a>
+			<hr>  
+            <a class="dropdown-item" href="#">Bootcamp Financing</a>
+            <a class="dropdown-item" href="#">Bootcamp Grads and Alumni</a>
+          </div>
+        </li>
+        <!-- Dropdown for Coding -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="codingDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Coding
+          </a>
+          <div class="dropdown-menu" aria-labelledby="codingDropdown">
+            <a class="dropdown-item" href="#">Coding Tools</a>
+            <a class="dropdown-item" href="#">HTML</a>
+			  <hr>  
+            <a class="dropdown-item" href="#">CSS</a>
+            <a class="dropdown-item" href="#">JS</a>
+            <a class="dropdown-item" href="#">Python</a>
+			  <hr>  
+            <a class="dropdown-item" href="#">Ruby</a>
+            <a class="dropdown-item" href="#">C++</a>
+            <a class="dropdown-item" href="#">Java</a>
+          </div>
+        </li>
+        <!-- Dropdown for Career Resources -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="careerDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Career Resources
+          </a>
+          <div class="dropdown-menu" aria-labelledby="careerDropdown">
+            <a class="dropdown-item" href="#">Career Advice</a>
+            <a class="dropdown-item" href="#">Interviews</a>
+			  <hr>  
+            <a class="dropdown-item" href="#">Tech Cities</a>
+            <a class="dropdown-item" href="#">Tech Salaries</a>
+          </div>
+        </li>
+        <!-- Dropdown for Tech Fields -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="techFieldsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Tech Fields
+          </a>
+          <div class="dropdown-menu" aria-labelledby="techFieldsDropdown">
+            <a class="dropdown-item" href="#">Web Design</a>
+            <a class="dropdown-item" href="#">Web Development</a>
+			  <hr>  
+            <a class="dropdown-item" href="#">Software Engineering</a>
+            <a class="dropdown-item" href="#">Data Science</a>
+          </div>
+        </li>
+        <!-- Non-Dropdown link for News & Commentary -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">News & Commentary</a>
+        </li>
+      </ul>
+      <!-- Search Form -->
+      <form class="form-inline ml-auto">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  
 </body>
-
 </html>
+
